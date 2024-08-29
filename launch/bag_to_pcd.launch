@@ -1,0 +1,16 @@
+<launch>
+  <arg name="bag_file" default="/media/lei/USB/rosbag/out/calib4.bag"/>
+  <arg name="lidar_topic" default="/livox/lidar"/>
+  <arg name="pcd_file" default="/media/lei/USB/rosbag/out/pcd/3.pcd"/>
+  <arg name="is_custom_msg" default="true"/>
+  <node 
+    pkg="livox_camera_calib"
+    type="bag_to_pcd"
+    name="bag_to_pcd"
+    output="screen"
+  />
+   <param name="bag_file" type="string" value="$(arg bag_file)"/>
+   <param name="lidar_topic" type="string" value="$(arg lidar_topic)"/>
+   <param name="pcd_file" type="string" value="$(arg pcd_file)"/>
+   <param name="is_custom_msg" type="bool" value="$(arg is_custom_msg)"/>
+</launch>
