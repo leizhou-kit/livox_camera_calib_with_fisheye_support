@@ -1,6 +1,7 @@
 # lidar_camera_calib_with_fisheye_support
-This repository adds support for fisheye lenses based on the hku-mars project livox_camera_calib, origin repository: https://github.com/hku-mars/livox_camera_calib/tree/master?tab=readme-ov-file#lidar_camera_calib.
-**Usage** in config file add your camera_type parameter and your camera matrix(3*3) & dist_coeffs(fisheye: [k1, k2, k3, k4], pinhole:[k1, k2, p1, p2, k3]), then follow the original pipeline.
+This repository adds support for fisheye lenses based on the hku-mars project livox_camera_calib. Original repository: https://github.com/hku-mars/livox_camera_calib.
+
+**Usage: ** add your camera_type parameter and your camera matrix(3*3) & dist_coeffs(fisheye: [k1, k2, k3, k4], pinhole:[k1, k2, p1, p2, k3]) in config file, then follow the original pipeline.
 
 **----The following is the original description----**
 
